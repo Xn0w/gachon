@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="오늘의 강의"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:background="#D3D3D3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#E0FFFF" >
+
+                <EditText
+                    android:id="@+id/todaysubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:text="과목명" />
+
+                <EditText
+                    android:id="@+id/subjecttime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:text="시간" />
+
+                <EditText
+                    android:id="@+id/attendsubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:text="링크이동" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#D3D3D3" >
+
+                <EditText
+                    android:id="@+id/todayclass0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:ems="10"
+                    android:text="클라우드" />
+
+                <EditText
+                    android:id="@+id/todaytime0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:ems="10"
+                    android:text="9:00 ~ 13:00" />
+
+                <Button
+                    android:id="@+id/attendButton0"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@drawable/buttondesign2"
+                    android:onClick="onButton0Clicked"
+                    android:text="참여하기" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#D3D3D3" >
+
+                <EditText
+                    android:id="@+id/todayclass1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:ems="10"
+                    android:text="애니메이션" />
+
+                <EditText
+                    android:id="@+id/todaytime1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:ems="10"
+                    android:text="13:00 ~ 16:00" />
+
+                <Button
+                    android:id="@+id/attendButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@drawable/buttondesign2"
+                    android:onClick="onButton1Clicked"
+                    android:text="참여하기" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#D3D3D3" >
+
+                <EditText
+                    android:id="@+id/todayclass2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:ems="10"
+                    android:text="종합프로젝트" />
+
+                <EditText
+                    android:id="@+id/todaytime2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onButton2Clicked"
+                    android:layout_weight="3"
+                    android:ems="10"
+                    android:text="18:30 ~ 20:15" />
+
+                <Button
+                    android:id="@+id/attendButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@drawable/buttondesign2"
+                    android:text="참여하기" />
+
+            </TableRow>
+
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:text="돌아기기"
+                android:background="@drawable/buttondesign" />
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
